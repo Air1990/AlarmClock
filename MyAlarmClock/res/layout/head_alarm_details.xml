@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/head_height"
+    android:background="#5CACEE" >
+
+    <FrameLayout
+        android:id="@+id/alarm_cancel"
+        android:layout_width="70dp"
+        android:layout_height="@dimen/head_height"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/alarm_head_bg_pressed"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/head_image_des"
+            android:src="@drawable/ic_action_back" />
+
+        <ImageView
+            android:id="@+id/lable"
+            android:layout_width="@dimen/head_height"
+            android:layout_height="@dimen/head_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/head_image_des"
+            android:padding="3dp"
+            android:src="@drawable/alarm_icon_title" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/head_details"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:id="@+id/alarm_save"
+        android:layout_width="@dimen/head_height"
+        android:layout_height="@dimen/head_height"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/alarm_head_bg_pressed" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/head_image_des"
+            android:src="@drawable/ic_action_save" />
+    </RelativeLayout>
+
+</RelativeLayout>

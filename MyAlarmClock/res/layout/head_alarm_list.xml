@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/head_height"
+    android:background="#5CACEE" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/head_height"
+        android:layout_height="@dimen/head_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/head_image_des"
+        android:padding="3dp"
+        android:src="@drawable/alarm_icon_title" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/head_list"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:id="@+id/alarm_add"
+        android:layout_width="@dimen/head_height"
+        android:layout_height="@dimen/head_height"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/alarm_head_bg_pressed" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/head_image_des"
+            android:src="@drawable/ic_action_new" />
+    </RelativeLayout>
+
+</RelativeLayout>
